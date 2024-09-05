@@ -1,0 +1,370 @@
+/* General Styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+/* Header Styles */
+.header {
+    width: 97%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 90px;
+    height: 80px;
+}
+
+.sign-in-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    margin-right: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('./netflix-background-9.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+
+}
+
+.input-group {
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    color: white;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.get-started-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.error-message {
+    color: #f1cccc;
+    margin-top: 10px;
+    padding-right: 76%;
+    font-weight: 500;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="email"],
+    .get-started-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.input-group input[type="email"] {
+    background-color: #505050;
+}
+
+.input-group input[type="email"]::placeholder {
+    color: #fffbfb;
+}
+
+/* Trending Section Styles */
+.trending-section {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.trending-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    background-color: #000000;
+    height: 45px;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.trending-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.trending-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #141414;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trending-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trending-rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    -webkit-text-stroke: 2px #fff;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.trending-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #e50914;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .trending-item {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+.screenshot-img {
+    width: 250%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 40px auto;
+}
+
+.screenshot-img1 {
+    width: 250%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 40px auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #000000;
+}
+
+footer {
+    padding: 20px;
+    background-color: #000000;
+    color: #000000;
+    text-align: center;
+    background-color: #000;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.email-section {
+    margin-bottom: 20px;
+}
+
+.email-section h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-form input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.email-form button:hover {
+    background-color: #f40612;
+}
+
+.footer-row {
+    margin-bottom: 20px;
+}
+
+.footer-row a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-language {
+    margin-bottom: 20px;
+}
+
+.footer-language select {
+    background-color: #141414;
+    color: #757575;
+    border: 1px solid #757575;
+    padding: 5px;
+}
+
+.footer-country {
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-form input,
+    .email-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
